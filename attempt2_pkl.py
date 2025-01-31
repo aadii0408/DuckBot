@@ -1,3 +1,4 @@
+# import libraries
 import os
 import pickle
 import openai
@@ -7,6 +8,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chat_models import ChatOpenAI
 import nltk
 
+# adding dependencies
 nltk.download("punkt")
 nltk.download("punkt_tab")
 nltk.download("averaged_perceptron_tagger_eng")
@@ -19,6 +21,19 @@ os.environ["USER_AGENT"] = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 )
 
+# Example URLs to fetch data from
+urls = [
+    "https://www.stevens.edu/information-for-high-school-counselors",
+    "https://www.stevens.edu/page-basic/public-transportation",
+    "https://www.stevens.edu/transportation-and-parking/stevens-shuttle",
+    "https://www.stevens.edu/transportation-and-parking",
+    "https://www.stevens.edu/transportation-and-parking/nj-transit",
+    "https://www.stevens.edu/academics/academics-at-stevens",
+    "https://www.stevens.edu/admission-aid/undergraduate-admissions/new-students/housing-and-dining-new-students",
+    "https://www.stevens.edu/admissions",
+    "https://www.stevens.edu/admission-aid/graduate-admissions",
+    "https://www.stevens.edu/apply",
+]
 
 # Function to fetch and process web data
 def fetch_and_store_data(urls, pickle_filename):
@@ -57,19 +72,5 @@ def fetch_and_store_data(urls, pickle_filename):
         pickle.dump(all_chunks, f)
     print(f"Data has been stored in {pickle_filename}")
 
-
-# Example URLs to fetch data from
-urls = [
-    "https://www.stevens.edu/information-for-high-school-counselors",
-    "https://www.stevens.edu/page-basic/public-transportation",
-    "https://www.stevens.edu/transportation-and-parking/stevens-shuttle",
-    "https://www.stevens.edu/transportation-and-parking",
-    "https://www.stevens.edu/transportation-and-parking/nj-transit",
-    "https://www.stevens.edu/academics/academics-at-stevens",
-    "https://www.stevens.edu/admission-aid/undergraduate-admissions/new-students/housing-and-dining-new-students",
-    "https://www.stevens.edu/admissions",
-    "https://www.stevens.edu/admission-aid/graduate-admissions",
-    "https://www.stevens.edu/apply",
-]
 # Store the fetched data
 fetch_and_store_data(urls, "stored_data.pkl")
