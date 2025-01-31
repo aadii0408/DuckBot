@@ -1,17 +1,54 @@
-# University Chatbot for International Students
+# AI-Powered DuckBot - Your Campus Buddy! 🚀
 
-## This is a custom ChatGPT-powered chatbot designed to assist international students at a university. The chatbot provides information on resources, future opportunities, on-campus guides, research projects, transportation (bus, PATH, train, road maps), and other essential services.
+## Overview 🎓
+The **University Chatbot for International Students(Major)** is an AI-powered assistant designed to make campus life easier. Whether you need guidance on research opportunities, student services, transportation, or social events, this chatbot provides real-time information, ensuring a seamless university experience.
 
-# Features
+## Features 🔥
 
-- Answer FAQs related to student life, visa, housing, and career opportunities.
+### 🤖 AI-Powered Chatbot
+- Answers FAQs related to student life, transportation, housing, and career opportunities.
+- Information research projects, internships, and job opportunities.
+- Recommends social and cultural events happening on campus. (Future Plan)
 
-- Provide real-time transportation guidance.
+### 📚 Resources, Guidance & Q/A
+- Acts as a digital tour guide, offering curated materials and essential campus information.
+- Assists students with academic and extracurricular queries.
+- Connects users with research labs and professor details.
 
-- Suggest research projects, internships, and job opportunities.
+### ⚙️ AI Agents for Campus Services (FUTURE PLAN)
+- **HR, Payroll, Graduate Services**: Automates administrative workflows.
+- **Professor Directory**: Provides easy access to professor contact details, research interests, and teaching schedules.
+- **Lab Research & Opportunities**: Helps students find and apply for research roles on campus.
 
-- Offer multilingual support for non-English speakers.
+## How It Works? 🤔
 
-- Deliver personalized alerts and notifications.
+1. **Ask a Question** 📩  
+   - Just type your query into the chatbot, and let AI do the rest!
 
-- Recommend social and cultural events happening on campus.
+2. **AI Magic at Work** ✨  
+   - Uses the LLM model to fetch the most relevant, accurate information.
+
+3. **Instant Response** ⚡  
+   - Get real-time, generalized answers—anytime, anywhere.
+
+## Tech Stack 🛠️
+- **Frontend:** Streamlit (for a sleek, interactive UI)
+- **Backend:** Python (With LLM), Langchain, 
+- **Database:** Pickle (for storing university-specific knowledge)
+- **Deployment:** AWS - Cloud-based hosting  (FUTURE)
+
+## Future Plans 🚀
+- AI-powered agents for **all departments**, including HR, Payroll, Campus Graduate Services, and more.
+- **Professor & Research Database**: Seamless access to professor details and lab opportunities with email and contacts.
+- **Optimized Performance**: Faster response times and improved system efficiency.
+
+
+## Contributing 🤝
+Have ideas to improve the chatbot? Feel free to email me @achampan1@stevens.edu
+
+## License 📜
+This project is licensed under the MIT License.
+
+---
+
+🎯 **Empowering International Students with DuckBot🦆** 
