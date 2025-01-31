@@ -22,7 +22,7 @@ The **University Chatbot for International Students(Major)** is an AI-powered as
 
 ## How It Works? 🤔
 
-![hippo](https://github.com/aadii0408/DuckBot/blob/main/data/Demo_-_DuckBot.mp4)
+https://github.com/user-attachments/assets/a8a8bfb2-c6ed-4332-9e28-92261f9c3c12
 
 1. **Ask a Question** 📩  
    - Just type your query into the chatbot, and let AI do the rest!
