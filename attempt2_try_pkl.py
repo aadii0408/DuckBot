@@ -1,9 +1,12 @@
+# Import the required library
+
 import pickle
 import os
 import openai
 from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
 
+#load the env
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -35,7 +38,7 @@ def get_response(question, stored_data):
     knowledge = "\n\n".join(chunk.page_content for chunk in relevant_chunks)
 
     # Initialize OpenAI LLM
-    llm = ChatOpenAI(model_name="gpt-4", temperature=0.5)
+    llm = ChatOpenAI(model_name="gpt-4o", temperature=0.5)
 
     # Construct prompt
     prompt = f"""
@@ -55,8 +58,9 @@ def get_response(question, stored_data):
 # Load the stored data from the pickle file
 stored_data = load_stored_data("stored_data.pkl")
 
-# Ask a question
+# Ask a question (just for check)
 question = "Is shuttle service is free for Stevens students?"
 response = get_response(question, stored_data)
 
+#print the answer in terminal
 print("Final Answer:", response)
