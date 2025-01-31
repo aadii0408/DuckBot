@@ -22,6 +22,8 @@ The **University Chatbot for International Students(Major)** is an AI-powered as
 
 ## How It Works? 🤔
 
+Demo: https://github.com/user-attachments/assets/c56d4cfa-2316-4d3f-9f3c-f460ab9b2edf
+
 1. **Ask a Question** 📩  
    - Just type your query into the chatbot, and let AI do the rest!
 
